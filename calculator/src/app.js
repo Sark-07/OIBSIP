@@ -3,23 +3,16 @@ const iterate = document.querySelectorAll('.iterate')
 const iterateOperators = document.querySelectorAll('.iterate-operations')
 const result = document.querySelector('.result')
 const screen = document.getElementById('screen')
-
 const utils = document.querySelectorAll('.utils')
-
-
 // ref vars
 let prevStr = ''
 let currentStr = ''
 let answer = ''
-
-
-
+// submit event listener
 form.addEventListener('submit', (e) => {
 
     e.preventDefault();
 })
-
-
 
 // utils
 Array.from(utils).forEach((elements) => {
@@ -46,7 +39,6 @@ Array.from(utils).forEach((elements) => {
     })
 })
 
-
 // for operands
 const addOperands = (operand) => {
     if (operand === '.' && currentStr.includes('.')) {
@@ -56,7 +48,6 @@ const addOperands = (operand) => {
     screen.value += operand;
     prevStr = ''
 }
-
 
 // for operators
 const addOperators = (operation) => {
@@ -75,8 +66,6 @@ const addOperators = (operation) => {
     screen.value += operation
     currentStr = ''
 }
-
-
 
 // event listener for operands and dot
 Array.from(iterate).forEach((elements, index) => {

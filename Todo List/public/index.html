@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+</head>
+<body>
+    <main>
+        <div class="container" data-simplebar >
+            <!-- <div id="empty" class="not-visible"></div> -->
+            <div class="child-holder"></div>
+            <div class="container-edit">
+                <div class="container-child">
+                    <div class="task">
+                    <i class="fas fa-cube task-icon"></i>
+                    <span>Task is completed</span>
+                    </div>
+                    <div class="edit-btn">
+                        <input id="edit-btn" type="button" value="Edit">
+                    </div>
+                    <div class="completed">
+                    <label for="completed">completed</label>
+                    <input type="checkbox" checked = false name="completed" id="completed">
+                    </div>
+                    <div class="options">
+                        <i class="fas fa-trash"></i>
+                    <!-- <i class="fas fa-ellipsis-v"></i>
+                    <div class="edit-delete show-edit-delete">
+                        <div class="edit">
+                            <i class="fas fa-wrench"></i>
+                            <span>Edit Task</span>
+                        </div>
+                        <div class="delete">
+                            <i class="fas fa-trash"></i>
+                            <span>Delete Task</span>
+                        </div>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+            
+            <form class="edit-task not-visible">
+                <h3 class="alert-h4"></h3>
+                <input class="new-task" type="text" placeholder="Enter new name">
+                <button class = "submit-edited-task" type="submit" >save</button>
+                <button class="cancel-input">cancel</button>
+            </form>
+            <div class="alert" id="alert"></div>
+            <div id="container-child-task-create" class="container-child-task-create">
+                <div id="create-task" class="create-task">
+                <i class="fas fa-plus"></i>
+                <span>Create Task</span>
+                </div> 
+                <form id="input-task" class="input-task not-visible">
+                    <input id="task-name" type="text" placeholder="Task Name">
+                    <button type="submit">save</button>
+                </form>
+            </div>
+            <p class='enter-alert'> Please enter something.</p>
+            <div class="cancel-btn not-visible" id="cancel-input">
+                <input class="" type="button" value="cancel">
+            </div>
+            <!-- <form id="edit-task" class="edit-task">
+                <input id="edit-task-name" type="text" placeholder="Task Name">
+                <button type="submit">save</button>
+            </form>
+            <div class="edit-alert" id="alert"></div>
+            <p class='edit-enter-alert'> Please enter something.</p>
+            <div class="edit-cancel-btn not-visible" id="cancel-input">
+                <input class="" type="button" value="cancel">
+            </div> -->
+            
+        </div
+    ></main>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../client/script.js"></script>
+    <script src="../client/client.js"></script>
+</body>
+</html>

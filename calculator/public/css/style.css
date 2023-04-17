@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Poppins:wght@400;600;700&family=Shrikhand&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+.container {
+  background: #4d8bc8;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc {
+  padding: 1.5em;
+  gap: 0.5em;
+  background: #ebf5ff;
+  width: 23%;
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.171);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 3.2em;
+}
+
+.screen {
+  padding: 0.5em;
+  position: relative;
+  grid-row: 1/3;
+  grid-column: 1/-1;
+}
+.screen > #screen {
+  background: transparent;
+  color: #5086bd;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  border: none;
+  outline: none;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+.result {
+  border: none;
+  outline: none;
+  text-align: end;
+  width: 100%;
+  background: inherit;
+  position: absolute;
+  right: 0;
+  bottom: 0.5em;
+  letter-spacing: 0.05em;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #031e45;
+}
+.cell {
+  user-select: none;
+  color: #031e45;
+  background: #cbe5fd;
+  border-radius: 8px;
+  box-shadow: -4px -1px 8px 0px rgba(0, 0, 0, 0.116);
+  display: flex;
+  letter-spacing: 0.1em;
+  align-items: center;
+  font-size: 1.2rem;
+  justify-content: center;
+  font-weight: 900;
+}
+
+.enter {
+  border: none;
+  outline: none;
+  letter-spacing: 0.05em;
+  grid-column: 3 /-1;
+  background: #4d8bc8e6;
+  color: aliceblue;
+}
+.symbols {
+  background: #a3d0fa;
+  color: #5086bd;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .calc {
+    width: 28%;
+  }
+}
+@media screen and (max-width: 725px) {
+  .calc {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .calc {
+    width: 90%;
+  }
+}

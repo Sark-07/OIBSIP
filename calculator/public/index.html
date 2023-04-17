@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/calculator.ico"
+    />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <form id="form" class="calc">
+        <div class="screen">
+          <input id="screen" type="text" placeholder="Enter" />
+          <input class="result" />
+        </div>
+        <div class="cell symbols utils" id="del">Del</div>
+        <div class="cell symbols utils" id="clearAll">AC</div>
+        <div class="cell symbols utils" id="ans">ans</div>
+        <div class="cell symbols iterate-operations">/</div>
+        <div class="cell iterate">7</div>
+        <div class="cell iterate">8</div>
+        <div class="cell iterate">9</div>
+        <div class="cell iterate-operations symbols">*</div>
+        <div class="cell iterate">4</div>
+        <div class="cell iterate">5</div>
+        <div class="cell iterate">6</div>
+        <div class="cell iterate-operations symbols">-</div>
+        <div class="cell iterate">1</div>
+        <div class="cell iterate">2</div>
+        <div class="cell iterate">3</div>
+        <div class="cell iterate-operations symbols">+</div>
+        <div class="cell iterate symbols">.</div>
+        <div class="cell iterate">0</div>
+        <button class="cell enter utils" id="submit">Enter</button>
+      </form>
+    </main>
+    <script src="../src/app.js"></script>
+  </body>
+</html>
